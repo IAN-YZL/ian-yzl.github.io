@@ -1,19 +1,10 @@
-import { Layout } from "antd";
 import React from "react";
-import SideBar from "./components/SideBar";
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import "antd/dist/antd.css";
-
-const { Sider } = Layout;
+import { Router } from "./routes/Router";
 
 function App() {
-  return (
-    <Layout style={{ height: "100vh" }}>
-      <Sider style={{ height: "100vh" }}>
-        <SideBar />
-      </Sider>
-    </Layout>
-  );
+  return <RouterProvider router={Router()} />;
 }
 
 export default App;
