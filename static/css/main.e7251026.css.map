@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.e7251026.css","mappings":"AAAA,KAGI,qBAAuB,CAFvB,2CAA4C,CAC5C,qBAEJ","sources":["App.css"],"sourcesContent":["body {\n    font-family: Jost,Arial,Helvetica,sans-serif;\n    word-break: break-word;\n    background-color: white;\n}"],"names":[],"sourceRoot":""}

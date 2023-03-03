@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7251026.css",
+    "main.js": "/static/js/main.aaf3d418.js",
+    "static/media/avatar.jpg": "/static/media/avatar.7cc1e022191fc506e0b9.jpg",
+    "static/media/ian-logo.png": "/static/media/ian-logo.082a38dead043e111851.png",
+    "index.html": "/index.html",
+    "main.e7251026.css.map": "/static/css/main.e7251026.css.map",
+    "main.aaf3d418.js.map": "/static/js/main.aaf3d418.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7251026.css",
+    "static/js/main.aaf3d418.js"
+  ]
+}
