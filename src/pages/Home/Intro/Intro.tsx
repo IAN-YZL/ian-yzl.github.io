@@ -15,10 +15,10 @@ export const Intro = () => {
 
   return (
     <IntroWrapper>
-      <AvatarWrapper src={avatar} alt="Avatar" />
       <Description>
         {`My name is Ian Yin. I am a seasoned Software Engineer with approximately ${experienceYear} years of industry experience.`}
       </Description>
+      <AvatarWrapper src={avatar} alt="Avatar" />
     </IntroWrapper>
   );
 };

@@ -1,4 +1,5 @@
 import { Box, styled } from "@mui/material";
+import { BoxWrapper } from "../../../components/styles";
 
 export const AvatarWrapper = styled("img")({
   width: 240,
@@ -6,17 +7,15 @@ export const AvatarWrapper = styled("img")({
   borderRadius: 240,
 });
 
-export const IntroWrapper = styled(Box)({
-  padding: "0 80px",
+export const IntroWrapper = styled(BoxWrapper)({
+  padding: "0 80px 160px 80px",
   marginTop: 64,
   display: "flex",
-  flexDirection: "column",
-  textAlign: "center",
   alignItems: "center",
 });
 
 export const Description = styled(Box)({
-  marginTop: 48,
   fontSize: "2.25rem",
   fontWeight: 600,
+  paddingRight: 16,
 });

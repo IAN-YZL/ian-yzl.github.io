@@ -1,6 +1,7 @@
-import { Box, Button, styled } from "@mui/material";
+import { Button, styled } from "@mui/material";
+import { BoxWrapper } from "../styles";
 
-export const NavigationWrapper = styled(Box)({
+export const NavigationWrapper = styled(BoxWrapper)({
   display: "flex",
   alignItems: "center",
   padding: "0 80px",
