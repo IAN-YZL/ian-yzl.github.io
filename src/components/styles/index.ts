@@ -35,7 +35,7 @@ export const CardContent = styled(Box)({
 });
 
 export const CardWrapper = styled(Box)({
-  width: 700,
+  maxWidth: 700,
   margin: "0 auto",
 });
 

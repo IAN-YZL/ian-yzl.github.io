@@ -1,5 +1,5 @@
 import { ArrowRightTwoTone, BuildTwoTone } from "@mui/icons-material";
-import { Box, CardContent, Typography } from "@mui/material";
+import { CardContent, Grid } from "@mui/material";
 import React from "react";
 import {
   BoxWrapper,
@@ -8,7 +8,7 @@ import {
   SubHeaderText,
   SubHeaderWrapper,
 } from "../../../components/styles";
-import { TechStackCategoryWrapper, TechStackItem } from "./TechStacks.styled";
+import { TechStackItem, TechStackLabel } from "./TechStacks.styled";
 
 const techStacks = {
   frontend: [
@@ -110,19 +110,28 @@ export const TechStacks = () => {
           <SubHeaderText>Tech Stacks</SubHeaderText>
         </SubHeaderWrapper>
         <CardContent>
-          {Object.entries(techStacks).map(([category, techs]) => (
-            <TechStackCategoryWrapper key={category}>
-              <ArrowRightTwoTone style={{ color: "#2b6bb1" }} />
-              <Box whiteSpace="nowrap" marginRight={"16px"} width="100px">
-                {category}
-              </Box>
-              <Box>
-                {techs.map((techItem) => (
-                  <TechStackItem label={techItem} key={techItem} />
-                ))}
-              </Box>
-            </TechStackCategoryWrapper>
-          ))}
+          <Grid
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="center"
+          >
+            {Object.entries(techStacks).map(([category, techs]) => (
+              <>
+                <Grid item xs={1}>
+                  <ArrowRightTwoTone style={{ color: "#2b6bb1" }} />
+                </Grid>
+                <Grid item xs={2}>
+                  <TechStackLabel>{category}</TechStackLabel>
+                </Grid>
+                <Grid item xs={9}>
+                  {techs.map((techItem) => (
+                    <TechStackItem label={techItem} key={techItem} clickable />
+                  ))}
+                </Grid>
+              </>
+            ))}
+          </Grid>
         </CardContent>
       </CardWrapper>
     </BoxWrapper>

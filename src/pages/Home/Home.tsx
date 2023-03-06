@@ -3,6 +3,7 @@ import { Navigation } from "../../components/Navigation/Navigation";
 import { AboutMe } from "./AboutMe/AboutMe";
 import { Intro } from "./Intro/Intro";
 import { TechStacks } from "./TechStacks/TeckStacks";
+import { Works } from "./Works/Works";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <Intro />
       <AboutMe />
       <TechStacks />
+      <Works />
     </>
   );
 };
